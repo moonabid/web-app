@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Dockerfile
 
 on:
   push:
@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file DockerFile --tag 897354677157.dkr.ecr.ap-south-1.amazonaws.com/futuion-angular
+      run: docker build . --file Dockerfile --tag 897354677157.dkr.ecr.ap-south-1.amazonaws.com/futuion-angular
