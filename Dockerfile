@@ -4,7 +4,6 @@ WORKDIR /app
 COPY . /app/
 # COPY package*.json ./ -- redundant
 RUN npm install -g @angular/cli
-RUN NODE_ENV=development npm i
 RUN npm install
 RUN ng build
 
