@@ -2,7 +2,7 @@
 FROM node:18.16.1 as node
 WORKDIR /app
 #COPY . /app/
- COPY package*.json ./ -- redundant
+COPY package*.json ./ -- redundant
 RUN npm install -g @angular/cli
 RUN npm install
 RUN ng build
